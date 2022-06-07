@@ -11,14 +11,23 @@
     <View
         android:layout_width="match_parent"
         android:id="@+id/statusView"
-        android:layout_height="wrap_content"/>
+        android:layout_height="15dp"/>
+
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:background="@color/transparent"
         app:popupTheme="@style/ToolbarPopupTheme"
         app:theme="@style/ToolbarStyle">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:src="@mipmap/topbar_control_leftback_white" />
 
         <TextView
             android:id="@+id/toolbarTitle"
